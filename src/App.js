@@ -9,7 +9,6 @@ class App extends Component {
 
   digitarTexto = e  => {
     this.setState({valor: e.target.value });
-    console.log(this.state.valor);
   }
 
   enviarErro = e => {
@@ -17,14 +16,14 @@ class App extends Component {
     const { valor } = this.state;
 
     if (valor) {
-      throw new Error(`Erro - Teste: ${valor}`);
+      throw new Error(`Mais um erro: ${valor}`);
     }
   }
 
   render () {
     return (
       <>   
-        <h3>Nome do erro: {this.state.valor}</h3>
+        <h3>Nome do erro: <small><i>{this.state.valor}</i></small></h3>
 
         <form onSubmit={this.enviarErro}>
           <input onChange={this.digitarTexto} type="text" name="name" />
