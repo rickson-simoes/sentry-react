@@ -17,7 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "serve -s build",
-    "sentrygo": "sentry-cli releases files comscript@v0.1.0 upload-sourcemaps --url-prefix '~/static/js' --validate build/static/js",
+    "sentrygo": "sentry-cli releases files <nomeProjeto@nomeVersao> upload-sourcemaps --url-prefix '~/static/js' --validate build/static/js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
