@@ -1,6 +1,6 @@
 [auth]
-token=e23abd44f30b49c2bd37dd2c3262319d8236e2d5a24b48f7aa33741b6041e04d
+token=
 
 [defaults]
-org=rickson
-project=reactteste
+org=
+project=
