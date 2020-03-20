@@ -9,4 +9,4 @@
   - Sentry/cli para utilizar a linha de comando e inserir informacoes para o sourcemaps
   - Sentry/files, que é um pacote opcional, serve para automatizar o upload do sourcemaps.
 
-5- Se for o caso de não querer utilizar o pacote opcional, é possivel utiizar o sourcemaps manual, onde coloquei o comando no package.json
+5- Se for o caso de não utilizar o pacote opcional, é possivel utiizar o sourcemaps manual, onde coloquei o comando no package.json. É necessario inserir as informacoes de autenticacao pelo comando 'sentry-cli login' e inserir o Token de acesso, também é necessário ter o '.sentryclirc' e as variaveis de ambiente '.env' atualizados com as informacoes do projeto, pois as configuracoes do sentry.init estão localizadas em .src/config/sentryConfig.js e são injetadas diretamente no .src/index.js
